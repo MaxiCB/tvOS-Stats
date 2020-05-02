@@ -17,14 +17,16 @@ struct HeaderView: View {
     }
     
     var body: some View {
-        HStack {
-            Image(uiImage: imageLoader.data != nil ? UIImage(data:imageLoader.data!)! : UIImage())
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:100, height:100)
-                .cornerRadius(10)
-            Text("Aaron C. Beasley")
-        }.position(x: 150, y: 50)
+        VStack(alignment: .leading) {
+            HStack {
+                Image(uiImage: imageLoader.data != nil ? UIImage(data:imageLoader.data!)! : UIImage())
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:100, height:100)
+                    .cornerRadius(10)
+                Text("Aaron C. Beasley").foregroundColor(.white)
+            }
+        }
     }
 }
 

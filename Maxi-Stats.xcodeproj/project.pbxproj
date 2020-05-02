@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FF3CBE92245DE44800611066 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CBE91245DE44800611066 /* Color.swift */; };
+		FF3CBE94245DE55300611066 /* StatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CBE93245DE55300611066 /* StatList.swift */; };
+		FF3CBE96245DEDF800611066 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CBE95245DEDF800611066 /* ProjectView.swift */; };
+		FF3CBE9A245DF02F00611066 /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CBE99245DF02F00611066 /* CurrentView.swift */; };
 		FFACCA64245D44AC00B7E597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACCA63245D44AC00B7E597 /* AppDelegate.swift */; };
 		FFACCA66245D44AC00B7E597 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACCA65245D44AC00B7E597 /* ContentView.swift */; };
 		FFACCA68245D44AE00B7E597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFACCA67245D44AE00B7E597 /* Assets.xcassets */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		FF3CBE91245DE44800611066 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		FF3CBE93245DE55300611066 /* StatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatList.swift; sourceTree = "<group>"; };
+		FF3CBE95245DEDF800611066 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		FF3CBE99245DF02F00611066 /* CurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
 		FFACCA60245D44AC00B7E597 /* Maxi-Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maxi-Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFACCA63245D44AC00B7E597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFACCA65245D44AC00B7E597 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -157,6 +163,9 @@
 			children = (
 				FFACCA92245D471900B7E597 /* HeaderView.swift */,
 				FFACCA99245D4E2900B7E597 /* StatView.swift */,
+				FF3CBE93245DE55300611066 /* StatList.swift */,
+				FF3CBE95245DEDF800611066 /* ProjectView.swift */,
+				FF3CBE99245DF02F00611066 /* CurrentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,11 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3CBE94245DE55300611066 /* StatList.swift in Sources */,
+				FF3CBE9A245DF02F00611066 /* CurrentView.swift in Sources */,
 				FFACCA66245D44AC00B7E597 /* ContentView.swift in Sources */,
 				FFACCA93245D471900B7E597 /* HeaderView.swift in Sources */,
 				FFACCA9A245D4E2900B7E597 /* StatView.swift in Sources */,
 				FFACCA98245D4A5200B7E597 /* ImageLoader.swift in Sources */,
 				FFACCA64245D44AC00B7E597 /* AppDelegate.swift in Sources */,
+				FF3CBE96245DEDF800611066 /* ProjectView.swift in Sources */,
 				FF3CBE92245DE44800611066 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

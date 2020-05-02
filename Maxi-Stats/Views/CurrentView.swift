@@ -1,5 +1,5 @@
 //
-//  StatView.swift
+//  CurrentView.swift
 //  Maxi-Stats
 //
 //  Created by Aaron Beasley on 5/2/20.
@@ -8,17 +8,18 @@
 
 import SwiftUI
 
-struct Stat: Identifiable {
+struct Current: Identifiable {
     var id = UUID()
     var title: String
-    var stat: String
+    var branch: String
+    var info: String
     var width: Int
     var height: Int
 }
 
-struct StatView: View {
+struct CurrentView: View {
     
-    var item = Stat(title: "Lines of Code", stat: "24678", width: 340, height: 220)
+    var item = Current(title: "Maxi-Stats", branch: "dev", info: "CurrentView.swift", width: 340, height: 220)
     
     var body: some View {
         VStack {
@@ -29,9 +30,14 @@ struct StatView: View {
                        .fontWeight(.medium)
                        .padding(.top)
                         .frame(maxWidth: .infinity, alignment: .center)
-
-                    Text(item.stat)
-                        .fontWeight(.bold).frame(maxWidth: .infinity, alignment: .center)
+                    
+                    
+                    Text("Task: " + item.info)
+                    .fontWeight(.regular).frame(maxWidth: .infinity, alignment: .center)
+                    
+                    
+                    Text("Branch: " + item.branch)
+                    .fontWeight(.regular).frame(maxWidth: .infinity, alignment: .center)
                  }
               }
               .padding(.horizontal)
@@ -44,8 +50,8 @@ struct StatView: View {
     }
 }
 
-struct StatView_Previews: PreviewProvider {
+struct CurrentView_Previews: PreviewProvider {
     static var previews: some View {
-        StatView()
+        CurrentView()
     }
 }

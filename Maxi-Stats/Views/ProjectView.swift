@@ -1,5 +1,5 @@
 //
-//  StatView.swift
+//  ProjectView.swift
 //  Maxi-Stats
 //
 //  Created by Aaron Beasley on 5/2/20.
@@ -8,17 +8,18 @@
 
 import SwiftUI
 
-struct Stat: Identifiable {
+struct Project: Identifiable {
     var id = UUID()
     var title: String
-    var stat: String
+    var date: String
+    var commits: String
     var width: Int
     var height: Int
 }
 
-struct StatView: View {
+struct ProjectView: View {
     
-    var item = Stat(title: "Lines of Code", stat: "24678", width: 340, height: 220)
+    var item = Project(title: "Lines of Code", date: "4/20/2020", commits: "2", width: 340, height: 220)
     
     var body: some View {
         VStack {
@@ -29,9 +30,12 @@ struct StatView: View {
                        .fontWeight(.medium)
                        .padding(.top)
                         .frame(maxWidth: .infinity, alignment: .center)
-
-                    Text(item.stat)
-                        .fontWeight(.bold).frame(maxWidth: .infinity, alignment: .center)
+                    
+                    Text("Commits: " + item.commits)
+                    .fontWeight(.regular).frame(maxWidth: .infinity, alignment: .center)
+                    
+                    Text("Date: " + item.date)
+                        .fontWeight(.light).frame(maxWidth: .infinity, alignment: .center)
                  }
               }
               .padding(.horizontal)
@@ -44,8 +48,8 @@ struct StatView: View {
     }
 }
 
-struct StatView_Previews: PreviewProvider {
+struct ProjectView_Previews: PreviewProvider {
     static var previews: some View {
-        StatView()
+        ProjectView()
     }
 }
