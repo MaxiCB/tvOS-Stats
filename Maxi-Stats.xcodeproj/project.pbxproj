@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF3CBE92245DE44800611066 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CBE91245DE44800611066 /* Color.swift */; };
 		FFACCA64245D44AC00B7E597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACCA63245D44AC00B7E597 /* AppDelegate.swift */; };
 		FFACCA66245D44AC00B7E597 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACCA65245D44AC00B7E597 /* ContentView.swift */; };
 		FFACCA68245D44AE00B7E597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFACCA67245D44AE00B7E597 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF3CBE91245DE44800611066 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FFACCA60245D44AC00B7E597 /* Maxi-Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maxi-Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFACCA63245D44AC00B7E597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFACCA65245D44AC00B7E597 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF3CBE90245DE43900611066 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FF3CBE91245DE44800611066 /* Color.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FFACCA57245D44AC00B7E597 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +113,7 @@
 		FFACCA62245D44AC00B7E597 /* Maxi-Stats */ = {
 			isa = PBXGroup;
 			children = (
-				FFACCA94245D48A900B7E597 /* Models */,
+				FF3CBE90245DE43900611066 /* Utils */,
 				FFACCA91245D46EF00B7E597 /* Views */,
 				FFACCA63245D44AC00B7E597 /* AppDelegate.swift */,
 				FFACCA65245D44AC00B7E597 /* ContentView.swift */,
@@ -149,13 +159,6 @@
 				FFACCA99245D4E2900B7E597 /* StatView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		FFACCA94245D48A900B7E597 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +297,7 @@
 				FFACCA9A245D4E2900B7E597 /* StatView.swift in Sources */,
 				FFACCA98245D4A5200B7E597 /* ImageLoader.swift in Sources */,
 				FFACCA64245D44AC00B7E597 /* AppDelegate.swift in Sources */,
+				FF3CBE92245DE44800611066 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
