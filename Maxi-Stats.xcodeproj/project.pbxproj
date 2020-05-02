@@ -14,6 +14,9 @@
 		FFACCA6E245D44AE00B7E597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFACCA6C245D44AE00B7E597 /* LaunchScreen.storyboard */; };
 		FFACCA79245D44AE00B7E597 /* Maxi_StatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACCA78245D44AE00B7E597 /* Maxi_StatsTests.swift */; };
 		FFACCA84245D44AE00B7E597 /* Maxi_StatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACCA83245D44AE00B7E597 /* Maxi_StatsUITests.swift */; };
+		FFACCA93245D471900B7E597 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACCA92245D471900B7E597 /* HeaderView.swift */; };
+		FFACCA98245D4A5200B7E597 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACCA97245D4A5200B7E597 /* ImageLoader.swift */; };
+		FFACCA9A245D4E2900B7E597 /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACCA99245D4E2900B7E597 /* StatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		FFACCA7F245D44AE00B7E597 /* Maxi-StatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Maxi-StatsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFACCA83245D44AE00B7E597 /* Maxi_StatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maxi_StatsUITests.swift; sourceTree = "<group>"; };
 		FFACCA85245D44AE00B7E597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFACCA92245D471900B7E597 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		FFACCA97245D4A5200B7E597 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FFACCA99245D4E2900B7E597 /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		FFACCA62245D44AC00B7E597 /* Maxi-Stats */ = {
 			isa = PBXGroup;
 			children = (
+				FFACCA94245D48A900B7E597 /* Models */,
+				FFACCA91245D46EF00B7E597 /* Views */,
 				FFACCA63245D44AC00B7E597 /* AppDelegate.swift */,
 				FFACCA65245D44AC00B7E597 /* ContentView.swift */,
 				FFACCA67245D44AE00B7E597 /* Assets.xcassets */,
 				FFACCA6C245D44AE00B7E597 /* LaunchScreen.storyboard */,
 				FFACCA6F245D44AE00B7E597 /* Info.plist */,
 				FFACCA69245D44AE00B7E597 /* Preview Content */,
+				FFACCA97245D4A5200B7E597 /* ImageLoader.swift */,
 			);
 			path = "Maxi-Stats";
 			sourceTree = "<group>";
@@ -131,6 +140,22 @@
 				FFACCA85245D44AE00B7E597 /* Info.plist */,
 			);
 			path = "Maxi-StatsUITests";
+			sourceTree = "<group>";
+		};
+		FFACCA91245D46EF00B7E597 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFACCA92245D471900B7E597 /* HeaderView.swift */,
+				FFACCA99245D4E2900B7E597 /* StatView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFACCA94245D48A900B7E597 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFACCA66245D44AC00B7E597 /* ContentView.swift in Sources */,
+				FFACCA93245D471900B7E597 /* HeaderView.swift in Sources */,
+				FFACCA9A245D4E2900B7E597 /* StatView.swift in Sources */,
+				FFACCA98245D4A5200B7E597 /* ImageLoader.swift in Sources */,
 				FFACCA64245D44AC00B7E597 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
